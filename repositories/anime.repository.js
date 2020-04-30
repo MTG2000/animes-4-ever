@@ -5,6 +5,35 @@ class Repository {
     return await DB.Animes.findAll();
   }
 
+  async find(id) {
+    return await DB.Animes.findByPk(id);
+  }
+
+  async getTop(limit) {
+    return await DB.Animes.findAll({
+      order: [["rating", "DESC"]],
+      limit,
+    });
+  }
+
+  async getUpcoming(limit) {
+    return await DB.Animes.findAll({
+      where: {
+        state: "upcoming",
+      },
+      limit,
+    });
+  }
+
+  async getTopAiring(limit) {
+    return await DB.Animes.findAll({
+      where: {
+        state: "airing",
+      },
+      order: [["rating", "DESC"]],
+      limit,
+    });
+  }
   async getByAuthor(id) {
     return await DB.Animes.findAll({
       where: {

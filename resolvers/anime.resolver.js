@@ -1,12 +1,19 @@
 module.exports = {
   Query: {
+    anime: async (parent, { id }, { AnimeRepository }) => {
+      return await AnimeRepository.find(id);
+    },
     allAnimes: async (parent, args, { AnimeRepository }) => {
       return await AnimeRepository.getAll();
     },
-    topAnimes: async (parent, { limit }, { AnimeRepository }) => {
-      return await AnimeRepository.getAll()
-        .sort((a, b) => b.rating - a.rating)
-        .slice(0, limit);
+    topAnimes: async (parent, { limit = 5 }, { AnimeRepository }) => {
+      return await AnimeRepository.getTop(limit);
+    },
+    upcomingAnimes: async (parent, { limit = 5 }, { AnimeRepository }) => {
+      return await AnimeRepository.getUpcoming(limit);
+    },
+    topAiringAnimes: async (parent, { limit = 5 }, { AnimeRepository }) => {
+      return await AnimeRepository.getTopAiring(limit);
     },
   },
   Anime: {

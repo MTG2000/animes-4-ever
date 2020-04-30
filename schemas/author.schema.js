@@ -8,6 +8,7 @@ module.exports = gql`
   }
 
   extend type Query {
+    author(id: Int!): Author
     allAuthors: [Author!]!
   }
 `;

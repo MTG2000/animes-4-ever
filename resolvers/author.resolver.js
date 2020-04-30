@@ -1,5 +1,9 @@
 module.exports = {
   Query: {
+    author: async (parent, { id }, { AuthorRepository }) => {
+      return await AuthorRepository.find(id);
+    },
+
     allAuthors: async (parent, args, { AuthorRepository }) => {
       return await AuthorRepository.getAll();
     },

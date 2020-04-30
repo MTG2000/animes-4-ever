@@ -8,6 +8,7 @@ module.exports = gql`
   }
 
   extend type Query {
+    studio(id: Int!): Studio
     allStudios: [Studio!]!
   }
 `;
