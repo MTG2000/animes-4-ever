@@ -1,6 +1,10 @@
 const { ApolloServer } = require("apollo-server-express");
-const app = require("express")();
+const express = require("express");
+const path = require("path");
+const app = express();
 const { sequelize } = require("./models");
+
+app.use(express.static(path.join(__dirname, "static")));
 
 // Type definitions define the "shape" of your data and specify
 // which ways the data can be fetched from the GraphQL server.
@@ -18,9 +22,7 @@ const context = require("./context");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: async ({ req }) => {
-    return context;
-  },
+  context,
 });
 server.applyMiddleware({ app, path: "/graphql" });
 

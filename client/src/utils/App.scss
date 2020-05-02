@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Farro&display=swap");
+@import "./bootstrap.min.css";
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  font-family: Farro, Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(45deg, #eee, #fff);
+}
+
+a {
+  color: initial !important;
+  &:hover {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit !important; /* no underline */
+  }
+}

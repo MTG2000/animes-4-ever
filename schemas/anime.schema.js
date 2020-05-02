@@ -4,6 +4,7 @@ module.exports = gql`
   type Anime {
     id: Int!
     title: String!
+    image: String!
     rating: Float
     state: String!
     author: Author

@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     "Animes",
     {
       title: { type: DataTypes.STRING, allowNull: false },
+      image: { type: DataTypes.STRING, allowNull: false },
       rating: { type: DataTypes.FLOAT },
       state: {
         type: DataTypes.ENUM,
