@@ -5,6 +5,7 @@ module.exports = gql`
     id: Int!
     title: String!
     image: String!
+    description: String!
     rating: Float
     state: String!
     author: Author

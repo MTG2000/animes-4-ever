@@ -3,10 +3,28 @@ import React from "react";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      "Ubuntu",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
+  },
   palette: {
+    text: {
+      primary: "#fff",
+    },
+
     primary: {
       // light: will be calculated from palette.primary.main,
-      main: "#4caf50",
+      main: "#f44336",
       // dark: will be calculated from palette.primary.main,
       // contrastText: will be calculated to contrast with palette.primary.main
     },

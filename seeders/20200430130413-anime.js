@@ -10,6 +10,8 @@ const animes = [
     state: "airing",
     authorId: 1,
     studioId: 1,
+    description:
+      "Eren Yeager(Jaeger in the anime adaptation) lives with Mikasa Ackerman and best friend Armin Arlert in the town of Shiganshina adjacent to Wall Maria, outermost of three circular walls protecting humanity from man-eating Titans said to have killed all other humans one hundred years prior. When Shiganshina and Wall Maria are breached by the Colossal(Colossus in the manga) and Armoured Titans, invading Titans force humanity to retreat behind Wall Rose. After a titan devours his mother and his father disappears, a vengeful Eren enlists in the military along with Mikasa and Armin.",
   },
   {
     title: "One Punch Man",
@@ -18,6 +20,8 @@ const animes = [
     state: "airing",
     authorId: 2,
     studioId: 1,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Tokyo Ghoul",
@@ -26,6 +30,8 @@ const animes = [
     state: "completed",
     authorId: 3,
     studioId: 2,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "My Hero Academia",
@@ -34,6 +40,8 @@ const animes = [
     state: "airing",
     authorId: 4,
     studioId: 3,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Death Note",
@@ -42,6 +50,8 @@ const animes = [
     state: "completed",
     authorId: 5,
     studioId: 2,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Code Gease",
@@ -50,6 +60,8 @@ const animes = [
     state: "completed",
     authorId: 5,
     studioId: 3,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Mob Pshyco 100",
@@ -58,6 +70,8 @@ const animes = [
     state: "completed",
     authorId: 2,
     studioId: 4,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Tower Of God",
@@ -65,6 +79,8 @@ const animes = [
     state: "upcoming",
     authorId: 3,
     studioId: 3,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Re Zero",
@@ -72,6 +88,8 @@ const animes = [
     state: "upcoming",
     authorId: 2,
     studioId: 4,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Solo Leveling",
@@ -79,6 +97,8 @@ const animes = [
     state: "upcoming",
     authorId: 2,
     studioId: 3,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Glepinir",
@@ -87,6 +107,8 @@ const animes = [
     rating: 8.2,
     authorId: 3,
     studioId: 1,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Sword Art Online",
@@ -95,6 +117,8 @@ const animes = [
     rating: 7.9,
     authorId: 3,
     studioId: 1,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Fate/Stay Night",
@@ -103,6 +127,8 @@ const animes = [
     rating: 8.7,
     authorId: 5,
     studioId: 4,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Demon Slayer",
@@ -111,6 +137,8 @@ const animes = [
     rating: 8.55,
     authorId: 3,
     studioId: 1,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Parasyte",
@@ -119,6 +147,8 @@ const animes = [
     rating: 8.67,
     authorId: 2,
     studioId: 3,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Darwins Game",
@@ -127,6 +157,8 @@ const animes = [
     rating: 8.2,
     authorId: 4,
     studioId: 3,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Beastars",
@@ -135,6 +167,8 @@ const animes = [
     rating: 8.59,
     authorId: 5,
     studioId: 2,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "One Piece",
@@ -143,6 +177,8 @@ const animes = [
     rating: 8.55,
     authorId: 4,
     studioId: 4,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
     title: "Bastards",
@@ -150,6 +186,8 @@ const animes = [
     state: "upcoming",
     authorId: 1,
     studioId: 2,
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
 ];
 

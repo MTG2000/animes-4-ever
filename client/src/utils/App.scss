@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Farro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
 @import "./bootstrap.min.css";
 
 html {
@@ -6,8 +7,7 @@ html {
 }
 
 body {
-  font-family: Farro, Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(45deg, #eee, #fff);
+  background: linear-gradient(45deg, #000, #313131);
 }
 
 a {

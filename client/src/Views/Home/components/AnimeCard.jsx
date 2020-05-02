@@ -30,14 +30,19 @@ const AnimeCard = ({ anime }) => {
             overflow: "hidden",
             whiteSpace: "nowrap",
             textOverflow: "ellipsis",
-            color: "#4caf50",
           }}
+          color="primary"
         >
           {anime.title}
         </Typography>
         {anime.rating && (
           <Grid container justify="center" alignItems="center">
-            <Typography variant="subtitle1" align="center">
+            <Typography
+              variant="subtitle1"
+              align="center"
+              color="textPrimary"
+              className="mx-2"
+            >
               {anime.rating}
             </Typography>
             <Star htmlColor="#ffeb3b" />

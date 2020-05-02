@@ -27,6 +27,24 @@ const mainPage = gql`
   }
 `;
 
+const animePage = gql`
+  query getAnime($id: Int!) {
+    anime(id: $id) {
+      title
+      image
+      rating
+      description
+      author {
+        name
+      }
+      studio {
+        name
+      }
+    }
+  }
+`;
+
 export default {
   mainPage,
+  animePage,
 };
