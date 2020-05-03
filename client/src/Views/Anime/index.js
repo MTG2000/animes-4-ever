@@ -22,7 +22,6 @@ const AnimePage = (props) => {
     <Box py={6}>
       <Container>
         <Grid container>
-         
           <Grid item className="px-5" xs={12} sm={8}>
             <Typography variant="h3" component="h1" color="primary">
               {anime.title}
@@ -67,7 +66,7 @@ const AnimePage = (props) => {
               {anime.description}
             </Typography>
           </Grid>
-           <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4}>
             <Image src={anime.image} />
           </Grid>
         </Grid>

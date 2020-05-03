@@ -1,5 +1,7 @@
 import React from "react";
+import "./bootstrap.min.css";
 import "./App.scss";
+
 import ScrollToTop from "./ScrollToTopController";
 import { BrowserRouter } from "react-router-dom";
 // import "./aos";
