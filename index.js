@@ -2,12 +2,25 @@ const { ApolloServer } = require("apollo-server-express");
 const express = require("express");
 const path = require("path");
 const app = express();
+const morgan = require("morgan");
+const compression = require("compression");
+const helmet = require("helmet");
 const favicon = require("serve-favicon");
 const { sequelize } = require("./models");
+
+const dev = app.get("env") !== "production";
+
+app.use(morgan("tiny"));
+
+if (!dev) {
+  app.disable("x-powerd-by");
+  app.use(compression());
+}
 
 app.use(express.static(path.join(__dirname, "static")));
 app.use(express.static(path.resolve(__dirname, "client", "build")));
 app.use(favicon(path.resolve(__dirname, "client", "build", "favicon.ico")));
+app.use(helmet());
 
 // Type definitions define the "shape" of your data and specify
 // which ways the data can be fetched from the GraphQL server.
