@@ -101,8 +101,8 @@ const animes = [
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis obcaecati alias! Quibusdam minus sit, esse excepturi exercitationem accusantium hic dolor deleniti necessitatibus quis eveniet explicabo eaque quae veniam in assumenda optio quo natus numquam et laborum facilis provident aliquid. Maxime voluptate quae earum eius quasi nemo nam minus quis esse cupiditate sint facere doloribus et sit, architecto eos rerum nobis atque incidunt, officia reprehenderit? Labore, ex delectus. Minima, cupiditate ",
   },
   {
-    title: "Glepinir",
-    image: "/images/glepinir.jpg",
+    title: "Gleipnir",
+    image: "/images/gleipnir.jpg",
     state: "airing",
     rating: 8.2,
     authorId: 3,
@@ -192,6 +192,7 @@ const animes = [
 ];
 
 module.exports = {
+  //sequelize db:seed:all
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert("Animes", animes, {});
   },

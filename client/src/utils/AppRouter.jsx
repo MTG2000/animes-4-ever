@@ -2,6 +2,8 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import LoadingPage from "../Views/Shared/LoadingPage";
 import AnimePage from "../Views/Anime";
+import AuthorPage from "../Views/Author";
+import StudioPage from "../Views/Studio";
 
 const Home = React.lazy(() => import("../Views/Home"));
 
@@ -10,6 +12,8 @@ const AppRouter = () => {
     <React.Suspense fallback={<LoadingPage fullPage={true} />}>
       <Switch>
         <Route path="/anime/:id" component={AnimePage} />
+        <Route path="/author/:id" component={AuthorPage} />
+        <Route path="/studio/:id" component={StudioPage} />
         <Route path="/" component={Home} />
       </Switch>
     </React.Suspense>

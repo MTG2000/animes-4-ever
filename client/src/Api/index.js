@@ -35,10 +35,40 @@ const animePage = gql`
       rating
       description
       author {
+        id
         name
       }
       studio {
+        id
         name
+      }
+    }
+  }
+`;
+
+const authorPage = gql`
+  query getAuthor($id: Int!) {
+    author(id: $id) {
+      name
+      animes {
+        id
+        title
+        image
+        rating
+      }
+    }
+  }
+`;
+
+const studioPage = gql`
+  query getStudio($id: Int!) {
+    studio(id: $id) {
+      name
+      animes {
+        id
+        title
+        image
+        rating
       }
     }
   }
@@ -47,4 +77,6 @@ const animePage = gql`
 export default {
   mainPage,
   animePage,
+  authorPage,
+  studioPage,
 };
