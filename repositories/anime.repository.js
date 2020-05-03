@@ -1,8 +1,19 @@
 const DB = require("../models");
+const { Op } = require("sequelize");
 
 class Repository {
   async getAll() {
     return await DB.Animes.findAll();
+  }
+
+  async getAllByName(name) {
+    return await DB.Animes.findAll({
+      where: {
+        title: {
+          [Op.like]: `%${name}%`,
+        },
+      },
+    });
   }
 
   async find(id) {

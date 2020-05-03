@@ -14,6 +14,7 @@ module.exports = gql`
 
   extend type Query {
     anime(id: Int): Anime
+    searchAnimes(name: String!): [Anime!]!
     allAnimes: [Anime!]!
     topAnimes(limit: Int): [Anime!]!
     upcomingAnimes(limit: Int): [Anime!]!

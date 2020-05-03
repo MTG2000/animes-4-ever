@@ -74,9 +74,21 @@ const studioPage = gql`
   }
 `;
 
+const searchAnime = gql`
+  query search($name: String!) {
+    animes: searchAnimes(name: $name) {
+      id
+      title
+      image
+      rating
+    }
+  }
+`;
+
 export default {
   mainPage,
   animePage,
   authorPage,
   studioPage,
+  searchAnime,
 };

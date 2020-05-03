@@ -6,6 +6,9 @@ module.exports = {
     allAnimes: async (parent, args, { AnimeRepository }) => {
       return await AnimeRepository.getAll();
     },
+    searchAnimes: async (parent, { name }, { AnimeRepository }) => {
+      return await AnimeRepository.getAllByName(name);
+    },
     topAnimes: async (parent, { limit = 5 }, { AnimeRepository }) => {
       return await AnimeRepository.getTop(limit);
     },
