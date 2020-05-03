@@ -9,6 +9,10 @@ const useStyle = makeStyles({
     width: 220,
     height: 400,
     margin: "auto 20px",
+    transition: "transform .4s ease-in-out",
+    "&:hover": {
+      transform: "translate(-5px, -5px)",
+    },
   },
 });
 
